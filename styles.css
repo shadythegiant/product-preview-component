@@ -1,0 +1,149 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+body {
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 1.5rem;
+}
+
+h1,
+.bprice {
+  font-family: Fraunces, sans-serif;
+}
+h1 {
+    color: ;hsl(212, 21%, 14%);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.4;
+    margin-bottom: 1rem;
+
+}
+
+img {
+    max-width: 100%;
+
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center; 
+  margin-bottom: 2rem;
+}
+
+ul li:first-child {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+ul li:last-child {
+
+  color:hsl(228, 12%, 48%) ;
+
+}
+
+button {
+
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+   font-weight: 700;
+   padding: 1rem 2rem;
+   font-size: 1rem;
+   width: 100%;
+  border: none;
+  border-radius: 0.6rem;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+
+}
+button:hover {
+
+  background-color: hsl(159, 37%, 15%);
+
+}
+
+.container .btn img{
+  margin-right: 1rem;
+}
+/* so images don't overflow */
+
+.container{
+  max-width: 600px;
+}
+
+
+.bprice {
+    color:hsl(158, 36%, 37%) ;
+}
+button,
+li {
+    font-family: inherit;
+} 
+
+.container article:first-child img{
+  border-radius: 1.5rem 1.5rem 0 0 ;
+}
+
+.container article:last-child {
+    background-color: white;
+    padding: 1.5rem ;
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: -1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 6rem auto auto auto  ; 
+  }
+  .container article:first-child img {
+
+    border-radius: 0;
+   
+
+  }
+  .container article:last-child{
+    border-radius: 0;
+    margin-top: 0;
+   
+  }
+  picture img {
+    height: 100%;
+  }
+}
